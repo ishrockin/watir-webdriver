@@ -19,9 +19,10 @@ Selenium::WebDriver::Chrome.driver_path = File.join(File.absolute_path('../..', 
 # http://stackoverflow.com/questions/18204926/automate-timeout-handling-wait-and-refresh-in-watir
 # http://stackoverflow.com/questions/18659847/reload-page-until-it-has-some-element-using-ruby-selenium-webdriver/18660166#18660166
 def get_browser
-  client = Selenium::WebDriver::Remote::Http::Default.new
-  client.timeout = TIMEOUT # seconds – default is 30
-  browser = Watir::Browser.new DRIVER.to_sym, :http_client => client
+ # client = Selenium::WebDriver::Remote::Http::Default.new
+ # client.timeout = TIMEOUT # seconds – default is 30
+ # browser = Watir::Browser.new DRIVER.to_sym, :http_client => client
+ browser = Watir::Browser.new(:remote, :url=> "http://172.28.160.40:4444/wd/hub") 
   return browser
 end
 
