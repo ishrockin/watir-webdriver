@@ -13,7 +13,7 @@ if ENV['HEADLESS']
   end
 end
 
-# custom attribute can now be used for locating objects. I found the solution here
+## custom attribute can now be used for locating objects. I found the solution here
 # http://jkotests.wordpress.com/2012/09/04/locate-element-via-custom-attribute-extending-watir-webdriver/
 module Watir
     class ElementLocator
