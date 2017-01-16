@@ -10,7 +10,7 @@ Selenium::WebDriver::Chrome.driver_path = File.join(File.absolute_path('../..', 
     #DRIVER = "firefox"
     DRIVER = "chrome"
  end
-
+#
 # This method to set timeout came from
 # http://stackoverflow.com/questions/9014121/how-do-i-change-the-page-load-timeouts-in-watir-webdriver-timeout-in-click-met/9044958#9044958
 # however, it's not working as expected :(
