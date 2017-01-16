@@ -7,7 +7,7 @@ module Urls
   #TARGET = :Guest
 
   BASE_URL = {
-    :Production  => "http://moduscreate.com/",
+    :Production  => "https://www.berkeleygroup.co.uk/",
     :Local => "http://localhost:8080/",
     :LocalSSL => "https://localhost:8443/",
     :Guest => "http://localhost:80/",
